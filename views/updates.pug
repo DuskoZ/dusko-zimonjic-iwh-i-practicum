@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Add New Record
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Add a new mountain peak
+    form(action="/update-cobj" method="POST")
+      label(for="name") Mountain name:
+      input(type="text" name="name" required)      
+      label(for="country") Country:
+      input(type="text" name="country" required)      
+      label(for="height") Height:
+      input(type="text" name="height" required)      
+      label(for="description") Description:
+      input(type="text" name="description" required)      
+      button(type="submit") Submit
+    a(href="/") Back to Homepage
