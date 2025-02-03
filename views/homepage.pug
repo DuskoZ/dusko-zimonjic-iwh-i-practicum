@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Mountains
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    div.container
+      h1.page-title The highest mountain peaks of European countries
+
+      a(href="/update-cobj").add-btn Add to this table
+
+      if data && data.length
+        table
+          thead
+            tr
+              th Name
+              th Country
+              th Height (m)
+              th Description
+          tbody
+            each record in data
+              tr
+                td= record.properties.name
+                td= record.properties.country
+                td= record.properties.height
+                td= record.properties.description
+                
