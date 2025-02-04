@@ -9,12 +9,12 @@ html
       h1.page-title Add a new mountain peak
       form(action="/update-cobj" method="POST")
         label(for="name") Mountain name:
-        input(type="text" name="name" required)      
+        input(type="text" name="name" id="name" required)      
         label(for="country") Country:
-        input(type="text" name="country" required)      
+        input(type="text" name="country" id="country" required)      
         label(for="height") Height:
-        input(type="number" name="height" required)      
+        input(type="number" name="height" id="height" required)      
         label(for="description") Description:
-        textarea(name="description" rows="5" required)      
+        textarea(name="description" id="description" rows="5" required)
         button(type="submit") Submit
       a(href="/").add-btn Return to the homepage
